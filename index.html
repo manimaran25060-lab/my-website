@@ -1,45 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Manimaran | Web Developer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-<div class="container">
+body {
+  background: #e0f2fe;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  <!-- LEFT CARD -->
-  <div class="card">
-    <img src="profile.jpg" alt="Manimaran">
-    <h1>Manimaran</h1>
-    <p class="role">Freelance Web Developer</p>
-    <a href="mailto:manimaran25060@gmail.com" class="btn-dark">Email Me</a>
-  </div>
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  width: 900px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
 
-  <!-- RIGHT CONTENT -->
-  <div class="content">
-    <h2>About Me</h2>
-    <p>
-      I am a freelance web developer who creates clean, modern,
-      and responsive websites for individuals and small businesses.
-      I focus on simple design, fast delivery, and client satisfaction.
-    </p>
+/* LEFT SIDE */
+.left {
+  width: 40%;
+  padding: 30px;
+  text-align: center;
+}
 
-    <div class="buttons">
-      <a href="#" class="btn">Resume</a>
-      <a href="#" class="btn">Portfolio</a>
-    </div>
+.left img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
-    <div class="social">
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-    </div>
-  </div>
+.left h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
 
-</div>
+.role {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
 
-</body>
-</html>
+.email-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 60%;
+  padding: 40px;
+  background: #bfdbfe;
+}
+
+.right h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.right p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+/* SOCIAL */
+.social a {
+  margin-right: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+}
+
 
