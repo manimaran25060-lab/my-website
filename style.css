@@ -1,23 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background: #0f172a;
-  color: #f1f5f9;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background: #2563eb;
-  padding: 40px;
-  text-align: center;
+body {
+  background: #e0f2fe;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-section {
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  width: 900px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* LEFT */
+.left {
+  width: 40%;
   padding: 30px;
+  text-align: center;
 }
 
-footer {
-  background: #020617;
-  text-align: center;
-  padding: 15px;
+.left img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.left h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.email-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RIGHT */
+.right {
+  width: 60%;
+  padding: 40px;
+  background: #bfdbfe;
+}
+
+.right h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.right p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+/* SOCIAL */
+.social a {
+  margin-right: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .left, .right {
+    width: 100%;
+  }
 }
 
