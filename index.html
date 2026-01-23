@@ -3,50 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Manimaran | Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Manimaran</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- LEFT PROFILE CARD -->
-    <div class="left">
-      <!-- Make sure profile.jpg exists in the same folder -->
-      <img src="profile.jpg" alt="Manimaran">
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Hi, I’m Manimaran</h1>
+    <p>I build clean and modern websites.</p>
 
-      <h1>Manimaran</h1>
-      <p class="role">Freelance Web Developer</p>
+    <a 
+      href="https://manimaran25060-lab.github.io/personal-portfolio/" 
+      target="_blank"
+      class="btn-primary">
+      View My Personal Portfolio
+    </a>
+  </section>
 
-      <a href="mailto:manimaran25060@gmail.com" class="email-btn">
-        EMAIL ME
-      </a>
-    </div>
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio">
+    <h2>My Work</h2>
+    <p>This is my main personal portfolio with full details.</p>
 
-    <!-- RIGHT CONTENT -->
-    <div class="right">
-      <h2>About Me</h2>
+    <a 
+      href="https://manimaran25060-lab.github.io/personal-portfolio/" 
+      target="_blank"
+      class="btn-secondary">
+      Open Portfolio
+    </a>
+  </section>
 
-      <p>
-        I help individuals and small businesses build clean, modern,
-        and responsive websites that look professional and work on all devices.
-        I focus on simple design, fast delivery, and clear communication.
-      </p>
-
-      <div class="buttons">
-        <!-- You can link real files later -->
-        <a href="#" class="btn">Resume</a>
-        <a href="#" class="btn">Portfolio</a>
-      </div>
-
-      <div class="social">
-        <!-- Replace # with real links later -->
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-
-  </div>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: manimaran25060@gmail.com</p>
+  </section>
 
 </body>
 </html>
